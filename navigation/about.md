@@ -7,7 +7,7 @@ comments: true
 
 ## As a conversation Starter
 
-Here are some places I have lived.
+Here are some places I have been to.
 
 <comment>
 Flags are made using Wikipedia images
@@ -60,10 +60,10 @@ Flags are made using Wikipedia images
     // 2. Define a JavaScript object for our http source and our data rows for the Living in the World grid
     var http_source = "https://upload.wikimedia.org/wikipedia/commons/";
     var living_in_the_world = [
-        {"flag": "0/01/Flag_of_California.svg", "greeting": "Hey", "description": "California - forever"},
-        {"flag": "b/b9/Flag_of_Oregon.svg", "greeting": "Hi", "description": "Oregon - 9 years"},
-        {"flag": "b/be/Flag_of_England.svg", "greeting": "Alright mate", "description": "England - 2 years"},
-        {"flag": "e/ef/Flag_of_Hawaii.svg", "greeting": "Aloha", "description": "Hawaii - 2 years"},
+        {"flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Flag_of_Mexico.svg/330px-Flag_of_Mexico.svg.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail", "greeting": "Buenos días", "description": "Mexico - 57 years"},
+        {"flag": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8kaORHCb5lAPPEpKt5WjfEVa_EwATWkXUbkfGf9fRESxTBBOQVVr6E71Y&s=10", "greeting": "Hi", "description": "Canada - 61 years"},
+        {"flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Flag_of_the_People%27s_Republic_of_China.svg/960px-Flag_of_the_People%27s_Republic_of_China.svg.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail", "greeting": "你好", "description": "China - 76 years"},
+        {"flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Flag_of_Cuba.svg/1280px-Flag_of_Cuba.svg.png?utm_source=simple.wikipedia.org&utm_campaign=index&utm_content=thumbnail", "greeting": "¡Asere, qué bolá", "description": "Cuba - 124 years"},
     ];
 
     // 3a. Consider how to update style count for size of container
