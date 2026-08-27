@@ -60,10 +60,10 @@ Flags are made using Wikipedia images
     // 2. Define a JavaScript object for our http source and our data rows for the Living in the World grid
     var http_source = "https://upload.wikimedia.org/wikipedia/commons/";
     var living_in_the_world = [
-        {"flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Flag_of_Mexico.svg/330px-Flag_of_Mexico.svg.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail", "greeting": "Buenos días", "description": "Mexico - 57 years"},
-        {"flag": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8kaORHCb5lAPPEpKt5WjfEVa_EwATWkXUbkfGf9fRESxTBBOQVVr6E71Y&s=10", "greeting": "Hi", "description": "Canada - 61 years"},
-        {"flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Flag_of_the_People%27s_Republic_of_China.svg/960px-Flag_of_the_People%27s_Republic_of_China.svg.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail", "greeting": "你好", "description": "China - 76 years"},
-        {"flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Flag_of_Cuba.svg/1280px-Flag_of_Cuba.svg.png?utm_source=simple.wikipedia.org&utm_campaign=index&utm_content=thumbnail", "greeting": "¡Asere, qué bolá", "description": "Cuba - 124 years"},
+        {"flag": "https://t4.ftcdn.net/jpg/01/98/41/75/360_F_198417518_i3lLEPoFOEYtAWGeHtoFjRZWesAKruWP.jpg", "greeting": "Buenos días", "description": "Mexico - 57 years"},
+        {"flag": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjyEo1aHuh8Nw_OXNZObUY8kyVt7LSxkU4x8dRbO7FNmbgjB87Y74_XKQ&s=10", "greeting": "Hi", "description": "Canada - 61 years"},
+        {"flag": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvOw4awcwSpqaa_raZWZ8Cg8q98wjJkFfukfVgq1xXqblNUE_J6zFc4aw&s=10", "greeting": "你好", "description": "China - 76 years"},
+        {"flag": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRI-VPq0nr0RwOeTFjH2a4x-PFXWTt4cNkR_eHRb-F_Y49sxo1cuagM_RA&s=10", "greeting": "¡Asere, qué bolá", "description": "Cuba - 124 years"},
     ];
 
     // 3a. Consider how to update style count for size of container
