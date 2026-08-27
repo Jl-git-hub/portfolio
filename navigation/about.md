@@ -102,6 +102,8 @@ Flags are made using Wikipedia images
 Here is what I did at those places
 
 - I lived in Canada for 11 years and went to preschool and k-4th grade there at a charter school
+- I went to China when I was around 6 to visit relatives
+I went to Cuba and Mexico for vacations
 
 ### Culture, Family, and Fun
 
