@@ -58,7 +58,7 @@ Flags are made using Wikipedia images
     var container = document.getElementById("grid_container"); // This container connects to the HTML div
 
     // 2. Define a JavaScript object for our http source and our data rows for the Living in the World grid
-    var http_source = "https://upload.wikimedia.org/wikipedia/commons/";
+    var http_source = "";
     var living_in_the_world = [
         {"flag": "https://t4.ftcdn.net/jpg/01/98/41/75/360_F_198417518_i3lLEPoFOEYtAWGeHtoFjRZWesAKruWP.jpg", "greeting": "Buenos días", "description": "Mexico - 57 years"},
         {"flag": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjyEo1aHuh8Nw_OXNZObUY8kyVt7LSxkU4x8dRbO7FNmbgjB87Y74_XKQ&s=10", "greeting": "Hi", "description": "Canada - 61 years"},
