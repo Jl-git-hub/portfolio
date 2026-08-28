@@ -111,7 +111,7 @@ Everything for me, as for many others, revolves around family and faith.
 
 - I'm half chinese and half Canto (also technically in China) 
 - I've been going to church since I could walk and my family is quite active in our current church. I help with vbs and the little kids ministry every year
-- For sports, I play badminton and I race karts. Hopefully I'll go to worlds this year.
+- For sports, I play badminton and I race karts. Hopefully I'll win this years racing championship so I can go to worlds.
 
 <comment>
 Gallery of Pics, scroll to the right for more ...
