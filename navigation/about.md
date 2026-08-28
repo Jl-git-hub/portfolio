@@ -117,7 +117,6 @@ Everything for me, as for many others, revolves around family and faith.
 Gallery of Pics, scroll to the right for more ...
 </comment>
 <div class="image-gallery">
-  <img src="https://drive.google.com/file/d/1CdiaH8-Nwi5gTtob16kiJhb8JqWX5xAQ/view?usp=drive_link" alt="Image 1">
-  <img src="https://drive.google.com/file/d/1_TTjKxGqCjzktXTLkzTHrWY2Y1bjUVUd/view?usp=drive_link" alt="Image 2">
-  <img src="https://drive.google.com/file/d/10jcAZtkEG9JXdcE_KwWEbm8aOoYXVtns/view?usp=drive_link" alt="Image 3">
+  <img src="{{site.baseurl}}/images/about/image1.jpg" alt="Image 1">
+  <img src="{{site.baseurl}}/images/about/image2.jpg" alt="Image 2">
 </div>
