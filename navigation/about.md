@@ -113,4 +113,11 @@ Everything for me, as for many others, revolves around family and faith.
 - I've been going to church since I could walk and my family is quite active in our current church. I help with vbs and the little kids ministry every year
 - For sports, I play badminton and I race karts. Hopefully I'll win this years racing championship so I can go to worlds.
 
-Hi, I am Jackson
+<comment>
+Gallery of Pics, scroll to the right for more ...
+</comment>
+<div class="image-gallery">
+  <img src="https://drive.google.com/file/d/1CdiaH8-Nwi5gTtob16kiJhb8JqWX5xAQ/view?usp=drive_link" alt="Image 1">
+  <img src="https://drive.google.com/file/d/1_TTjKxGqCjzktXTLkzTHrWY2Y1bjUVUd/view?usp=drive_link" alt="Image 2">
+  <img src="https://drive.google.com/file/d/10jcAZtkEG9JXdcE_KwWEbm8aOoYXVtns/view?usp=drive_link" alt="Image 3">
+</div>
