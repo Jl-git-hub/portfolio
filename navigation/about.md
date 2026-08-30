@@ -7,7 +7,7 @@ comments: true
 
 ## As a conversation Starter
 
-Here are some places I have been to.
+My name is Jackson, here are some places I have been to.
 
 <comment>
 Flags are made using Wikipedia images
