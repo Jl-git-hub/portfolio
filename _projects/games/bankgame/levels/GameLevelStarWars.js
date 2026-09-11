@@ -11,7 +11,7 @@ class GameLevelStarWars {
     let path = gameEnv.path;
 
     // Background data
-    const image_src_bankvault = path + "_projects/games/bankgame/images/bankvault.png"; // be sure to include the path
+    const image_src_bankvault = path + "images/projects/bankgame/bankvault.png"; // be sure to include the path
     const image__data_bankvault = {
         id: 'BankVault',
         src: image_src_bankvault,
@@ -19,7 +19,7 @@ class GameLevelStarWars {
     };
 
     // Player data for snowspeeder
-    const sprite_src_snowspeeder = path + "_projects/games/bankgame/images/chillguy.png"; // be sure to include the path
+    const sprite_src_snowspeeder = path + "images/projects/bankgame/chillguy.png"; // be sure to include the path
     const SNOWSPEEDER_SCALE_FACTOR = 6;
     const sprite_data_snowspeeder = {
         id: 'player',
