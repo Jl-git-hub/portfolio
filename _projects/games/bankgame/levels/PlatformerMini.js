@@ -18,10 +18,10 @@ class PlatformerMini {
       this.ctx = this.canvas.getContext('2d'); 
 
       this.backgroundImage = new Image();
-      this.backgroundImage.src = `${gameEnv.path}/images/projects/gamify/mcbg.jpg`; 
+      this.backgroundImage.src = `${gameEnv.path}/images/projects/bankgame/mcbg.jpg`;
 
       this.collectibleImage = new Image();
-      this.collectibleImage.src = `${gameEnv.path}/images/projects/gamify/sword.png`; 
+      this.collectibleImage.src = `${gameEnv.path}/images/projects/bankgame/sword.png`;
 
       this.playerImage = new Image();
       this.playerImage.src = `${gameEnv.path}/images/projects/gamify/stevelol.png`; 

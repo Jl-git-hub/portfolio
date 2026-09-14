@@ -80,7 +80,11 @@ import { BaseRunner, GameExecutor } from '{{ site.baseurl }}/assets/js/pages/run
   const levelClasses = `{{ include.levels }}`.trim().split(',').map(s => s.trim()).filter(Boolean);
   const storageKey = container.dataset.storageKey;
 
+  function parseCssSizeToPixels(value, fallback) {
+    if (!value) return fallback;
+    const parsed = Number.parseFloat(value);
     return Number.isFinite(parsed) ? parsed : fallback;
+  }
 
   function getLevelOptionLabel(levelClass, index) {
     return levelClass?.displayName

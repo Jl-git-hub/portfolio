@@ -13,6 +13,7 @@ matching the filename pattern expected by the Makefile (`*_IPYNB_2_.md`).
 from __future__ import annotations
 
 import argparse
+import re
 import sys
 from pathlib import Path
 
@@ -29,6 +30,30 @@ except ImportError as exc:  # pragma: no cover - environment dependency
 DEFAULT_SOURCE_DIR = Path("_notebooks")
 DEFAULT_OUTPUT_DIR = Path("_posts")
 DEFAULT_SUFFIX = "_IPYNB_2_"
+
+
+def _unwrap_front_matter(body: str) -> str:
+    """Remove nbconvert's code fence around a notebook front-matter cell."""
+    pattern = r"\A```(?:yaml|yml|python)?\n(---\n.*?\n---\n)\n?```\n?"
+    return re.sub(pattern, r"\1", body, count=1, flags=re.DOTALL)
+
+
+def _convert_game_runner(body: str) -> str:
+    """Render GAME_RUNNER notebook cells with the site's interactive runner."""
+    pattern = r"```python\n%%js\n\n// GAME_RUNNER:.*?\n\n(.*?)\n```"
+
+    def replace(match: re.Match[str]) -> str:
+        code = match.group(1).replace("{%", "{% raw %}{%").replace("%}", "%}{% endraw %}")
+        return (
+            "{% capture notebook_game_code %}\n"
+            f"{code}\n"
+            "{% endcapture %}\n"
+            '{% include runners/game.html runner_id="notebook-game" '
+            'code=notebook_game_code hide_edit="true" width="100%" '
+            'height="500px" autostart="true" %}'
+        )
+
+    return re.sub(pattern, replace, body, count=1, flags=re.DOTALL)
 
 
 def _build_output_path(notebook_path: Path, source_dir: Path = DEFAULT_SOURCE_DIR, output_dir: Path = DEFAULT_OUTPUT_DIR) -> Path:
@@ -72,6 +97,8 @@ def convert_notebook(notebook_path: str | Path, source_dir: Path = DEFAULT_SOURC
 
     exporter = MarkdownExporter()
     body, _ = exporter.from_filename(str(notebook))
+    body = _unwrap_front_matter(body)
+    body = _convert_game_runner(body)
     output_path.write_text(body, encoding="utf-8")
     return output_path
 

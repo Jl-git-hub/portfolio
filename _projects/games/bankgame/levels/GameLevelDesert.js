@@ -20,7 +20,7 @@ class GameLevelDesert {
 
 
         // Background data
-        const image_src_desert = path + "/images/projects/gamify/desert.png"; // be sure to include the path
+        const image_src_desert = path + "/images/projects/bankgame/desert.png"; // be sure to include the path
         const image_data_desert = {
             name: 'desert',
             greeting: "Welcome to the desert!  It is hot and dry here, but there are many adventures to be had!",
@@ -30,7 +30,7 @@ class GameLevelDesert {
 
 
         // Player data for Chillguy
-        const sprite_src_chillguy = path + "/images/projects/gamify/chillguy.png"; // be sure to include the path
+        const sprite_src_chillguy = path + "/images/projects/bankgame/chillguy.png"; // be sure to include the path
         const CHILLGUY_SCALE_FACTOR = 5;
         const sprite_data_chillguy = {
             id: 'Chill Guy',

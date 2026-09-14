@@ -12,7 +12,7 @@ class GameLevelOverworld {
     const path = gameEnv.path;
 
     // Background image info
-    const image_src_main = `${path}/images/projects/gamify/maine_RPG.png`;
+    const image_src_main = `${path}/images/projects/bankgame/maine_RPG.png`;
     const image_data_main = {
       name: 'main',
       greeting: "Welcome to the main hub of Overworld.",
@@ -21,7 +21,7 @@ class GameLevelOverworld {
     };
 
     // Player sprite info and configuration
-    const sprite_src_player = `${path}/images/projects/gamify/steve.png`;
+    const sprite_src_player = `${path}/images/projects/bankgame/steve.png`;
     const PLAYER_SCALE_FACTOR = 5;
     const sprite_data_player = {
       id: 'Player',

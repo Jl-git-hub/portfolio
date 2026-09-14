@@ -27,7 +27,7 @@ class GameLevelEnd {
     this.dialogueSystem = new DialogueSystem();
     
     // Parallax background configuration
-    const image_src_parallax = path + "/images/projects/gamify/parallaxbg.png";
+    const image_src_parallax = path + "/images/projects/bankgame/parallaxbg.png";
     const image_data_parallax = {
         name: 'parallax_background',
         id: 'parallax-background',
@@ -40,7 +40,7 @@ class GameLevelEnd {
         zIndex: 1  // Use positive z-index but keep it low
     };
     
-    const image_src_end = path + "/images/projects/gamify/TransparentEnd.png";
+    const image_src_end = path + "/images/projects/bankgame/TransparentEnd.png";
     const image_data_end = {
         name: 'end',
         id: 'end-background',
