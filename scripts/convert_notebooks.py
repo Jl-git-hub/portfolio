@@ -40,20 +40,23 @@ def _unwrap_front_matter(body: str) -> str:
 
 def _convert_game_runner(body: str) -> str:
     """Render GAME_RUNNER notebook cells with the site's interactive runner."""
-    pattern = r"```python\n%%js\n\n// GAME_RUNNER:.*?\n\n(.*?)\n```"
+    pattern = r"```python\n%%js\n\s*// GAME_RUNNER:.*?\n\s*(.*?)\n```"
+    runner_number = 0
 
     def replace(match: re.Match[str]) -> str:
+        nonlocal runner_number
+        runner_number += 1
         code = match.group(1).replace("{%", "{% raw %}{%").replace("%}", "%}{% endraw %}")
         return (
-            "{% capture notebook_game_code %}\n"
+            f"{{% capture notebook_game_code_{runner_number} %}}\n"
             f"{code}\n"
             "{% endcapture %}\n"
-            '{% include runners/game.html runner_id="notebook-game" '
-            'code=notebook_game_code hide_edit="true" width="100%" '
+            f'{{% include runners/game.html runner_id="notebook-game-{runner_number}" '
+            f'code=notebook_game_code_{runner_number} hide_edit="true" width="100%" '
             'height="500px" autostart="true" %}'
         )
 
-    return re.sub(pattern, replace, body, count=1, flags=re.DOTALL)
+    return re.sub(pattern, replace, body, flags=re.DOTALL)
 
 
 def _build_output_path(notebook_path: Path, source_dir: Path = DEFAULT_SOURCE_DIR, output_dir: Path = DEFAULT_OUTPUT_DIR) -> Path:
